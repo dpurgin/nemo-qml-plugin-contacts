@@ -42,19 +42,19 @@
 class Q_DECL_EXPORT NemoContactsPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "org.nemomobile.contacts")
+    Q_PLUGIN_METADATA(IID "kz.dpurgin.nemomobile.contacts")
 
 public:
     virtual ~NemoContactsPlugin() { }
 
     void initializeEngine(QQmlEngine *, const char *uri)
     {
-        Q_ASSERT(uri == QLatin1String("org.nemomobile.contacts"));
+        Q_ASSERT(uri == QLatin1String("kz.dpurgin.nemomobile.contacts"));
     }
 
     void registerTypes(const char *uri)
     {
-        Q_ASSERT(uri == QLatin1String("org.nemomobile.contacts"));
+        Q_ASSERT(uri == QLatin1String("kz.dpurgin.nemomobile.contacts"));
 
         qmlRegisterType<SeasideFilteredModel>(uri, 1, 0, "PeopleModel");
         qmlRegisterType<SeasideNameGroupModel>(uri, 1, 0, "PeopleNameGroupModel");

@@ -1,2 +1,2 @@
-module org.nemomobile.contacts
+module kz.dpurgin.nemomobile.contacts
 plugin nemocontacts
